@@ -272,7 +272,7 @@
   </div>
   <div class="w-full py-4 flex justify-center items-center bg-black">
     <h1 class="text-white text-center font-mono text-sm">
-      JPLT word list was retrived from
+      JLPT word list was retrived from
       <a class="text-blue-400" href="https://jlptsensei.com"
         >https://jlptsensei.com</a
       >
