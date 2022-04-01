@@ -1,1 +1,1 @@
-JPLT word list was retrived from https://jlptsensei.com
+JLPT word list was retrieved from https://jlptsensei.com
