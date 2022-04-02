@@ -5,7 +5,7 @@
   import Credit from "./lib/Credit.svelte";
   import Kanji from "./lib/kanji.svelte";
 
-  let mode = "kanji";
+  let mode = "vocab";
 
   const setMode = (x) => {
     if (x != mode) mode = x;
