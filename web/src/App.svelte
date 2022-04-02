@@ -3,7 +3,7 @@
 
   import Vocab from "./lib/Vocab.svelte";
   import Credit from "./lib/Credit.svelte";
-  import Kanji from "./lib/kanji.svelte";
+  import Kanji from "./lib/Kanji.svelte";
 
   let mode = "vocab";
 
