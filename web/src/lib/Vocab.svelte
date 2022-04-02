@@ -5,7 +5,7 @@
   import n2 from "../data/n2_vocab.json";
   import n1 from "../data/n1_vocab.json";
   import ProgressBar from "./ProgressBar.svelte";
-
+  import { slide, blur, fade } from "svelte/transition";
   const words = {
     N5: n5,
     N4: n4,
@@ -42,6 +42,7 @@
   };
   let batchSize = 40;
   let currentBatch = 0;
+
   $: startIdx = status[currentWordSet].batches[currentBatch].start;
   $: endIdx = status[currentWordSet].batches[currentBatch].end;
 
@@ -202,14 +203,14 @@
       class="relative w-64 h-40 rounded-lg shadow-md bg-white flex  justify-center items-center overflow-hidden cursor-pointer select-none touch-none"
     >
       <div
-        class="left-4 top-4 absolute w-8 h-8 border rounded-full flex items-center justify-center"
+        class="left-2 top-2 absolute w-7 h-7 border rounded-full flex items-center justify-center"
       >
-        <h1 class="text-sm">{word.num}</h1>
+        <h1 class="text-xs">{word.num}</h1>
       </div>
       {#if completed}
         <div
           on:click={setHideMeaning}
-          class={`bg-black text-white absolute  w-64 h-full flex-col justify-center items-center py-4 gap-2 transition-all flex px-4 text-center`}
+          class={`bg-black text-white absolute w-64 h-full flex-col justify-center items-center py-4 gap-2 transition-all flex px-4 text-center`}
         >
           <h1 class="text-md font-light font-mono">Completed</h1>
         </div>
@@ -218,23 +219,20 @@
           on:click={setHideMeaning}
           class={`absolute  w-64 h-full flex-col justify-center items-center py-4 gap-2 transition-all flex px-4 text-center`}
         >
-          <h1 class="text-xs border-b font-light">{word.vType}</h1>
-          <h1 class="text-md font-light">{word.vm}</h1>
+          <h1 class="text-md font-light">{word.meaning}</h1>
+          <h1 class="text-xs font-light">({word.type})</h1>
         </div>
       {:else}
         <div
           on:click={setShowMeaning}
           class={`absolute w-64 h-full flex-col justify-center items-center py-4 gap-2 flex`}
         >
-          {#each word.v as v}
-            <h1 class="text-2xl">{v.string}</h1>
-          {/each}
-          {#each word.vr as vr}
-            <!-- <h1>{vr.string}</h1> -->
-            {#if !word.isKatakana && word.v[0].string != vr.hiragana}
-              <h1 class="text-2xl">{vr.hiragana}</h1>
-            {/if}
-          {/each}
+          <h1 class="text-2xl">{word.word}</h1>
+
+          <!-- <h1>{vr.string}</h1> -->
+          {#if !word.isKatakana && word.reading != word.reading_hiragana}
+            <h1 class="text-2xl">{word.reading_hiragana}</h1>
+          {/if}
         </div>
       {/if}
     </div>

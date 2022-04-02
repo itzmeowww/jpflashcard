@@ -202,9 +202,9 @@
       class="relative w-64 h-40 rounded-lg shadow-md bg-white flex  justify-center items-center overflow-hidden cursor-pointer select-none touch-none"
     >
       <div
-        class="left-4 top-4 absolute w-8 h-8 border rounded-full flex items-center justify-center"
+        class="left-2 top-2 absolute w-7 h-7 border rounded-full flex items-center justify-center"
       >
-        <h1 class="text-sm">{word.num}</h1>
+        <h1 class="text-xs">{word.num}</h1>
       </div>
       {#if completed}
         <div
@@ -216,28 +216,28 @@
       {:else if showMeaning}
         <div
           on:click={setHideMeaning}
-          class={`absolute  w-64 h-full flex-col justify-center items-center py-4 gap-2 transition-all flex px-4 text-center`}
+          class={`absolute  w-64 h-full overflow-y-auto flex-col justify-center items-center py-4 gap-2 transition-all flex px-4 text-center`}
         >
-          <div class="grid-cols-2 grid text-xs gap-2">
-            <div class="flex flex-col border-r  p-2 rounded">
-              <h1 class="font-bold border-b">on</h1>
+          <h1 class="text-md font-light">{word.meaning}</h1>
+          <div class="flex flex-col justify-center items-center text-xs gap-1">
+            <div class="flex gap-2">
+              <h1 class="font-bold">on</h1>
               <h1>{word.on[0].string}</h1>
               <h1>{word.on[1].string}</h1>
             </div>
-            <div class="flex flex-col border-l p-2 rounded">
-              <h1 class="font-bold border-b">kun</h1>
+            <div class="flex gap-2 ">
+              <h1 class="font-bold">kun</h1>
               <h1>{word.kun[0].string}</h1>
               <h1>{word.kun[1].string}</h1>
             </div>
           </div>
-          <h1 class="text-sm font-light border-t">{word.m}</h1>
         </div>
       {:else}
         <div
           on:click={setShowMeaning}
           class={`absolute w-64 h-full flex-col justify-center items-center py-4 gap-2 flex`}
         >
-          <h1 class="text-2xl">{word.k.string}</h1>
+          <h1 class="text-2xl">{word.kanji}</h1>
         </div>
       {/if}
     </div>
