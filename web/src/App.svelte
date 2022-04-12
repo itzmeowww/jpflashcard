@@ -10,13 +10,29 @@
 
   let mode = "vocab";
 
+  let isDarkMode = false;
+
   const setMode = (x) => {
     if (x != mode) mode = x;
   };
 
-  let openSetting = false;
-  const toggleSetting = () => {
-    openSetting = !openSetting;
+  let showingHelp = false;
+  const showHelp = () => {
+    showingHelp = true;
+  };
+  let showingSetting = false;
+  const showSetting = () => {
+    showingSetting = true;
+  };
+  const closeAll = () => {
+    showingHelp = false;
+    showingSetting = false;
+  };
+
+  let batchSize = 40;
+  let hideCredit = false;
+  const setBatchSize = (x) => {
+    batchSize = x;
   };
 </script>
 
@@ -24,12 +40,26 @@
   class="relative bg-gray-100 w-screen min-h-screen flex flex-col justify-center items-center"
 >
   <button
-    on:click={toggleSetting}
-    class={`fixed z-40 right-4 top-4 rounded-full h-8 w-8 shadow-md flex flex-col items-center justify-center ${
-      openSetting ? "bg-white" : "bg-black"
+    on:click={showSetting}
+    class={`touch-none fixed z-20 right-4 top-4 rounded-full h-8 w-8 shadow-md flex flex-col items-center justify-center ${
+      showingSetting ? "bg-white" : "bg-black"
     }`}
   >
-    {#if openSetting}
+    <div
+      transition:fade
+      class="absolute flex flex-col items-center justify-center gap-1"
+    >
+      <div class="w-3 h-0.5 bg-white" />
+      <div class="w-4 h-0.5 bg-white" />
+      <div class="w-3 h-0.5 bg-white" />
+    </div>
+  </button>
+
+  {#if showingHelp || showingSetting}
+    <button
+      on:click={closeAll}
+      class={`touch-none fixed z-40 right-4 top-4 rounded-full h-8 w-8 shadow-md flex flex-col items-center justify-center bg-white`}
+    >
       <div
         transition:fade
         class="absolute flex flex-col items-center justify-center"
@@ -37,23 +67,82 @@
         <div class="w-5 h-0.5  rotate-45 bg-black" />
         <div class="w-5 -mt-0.5 h-0.5  -rotate-45 bg-black" />
       </div>
-    {:else}
-      <div
-        transition:fade
-        class="absolute flex flex-col items-center justify-center gap-1"
-      >
-        <div class="w-3 h-0.5 bg-white" />
-        <div class="w-4 h-0.5 bg-white" />
-        <div class="w-3 h-0.5 bg-white" />
-      </div>
-    {/if}
-  </button>
-  {#if openSetting}
+    </button>
+  {/if}
+
+  {#if showingSetting}
     <div
       transition:slide
-      class="fixed z-30 h-screen w-screen bg-black font-mono text-xl top-0 text-white flex justify-center items-center"
+      class=" fixed z-30 h-screen w-full bg-white text-sm top-0 text-black flex justify-center items-center px-4"
     >
-      Stay Tune For Settings...
+      <div class="w-full max-w-md">
+        <h1
+          class="w-full text-center border-b pb-1 mb-6 text-xl mx-auto font-mono"
+        >
+          Settings
+        </h1>
+        <div class="w-full flex flex-col gap-2 justify-center items-center">
+          <div class="flex">
+            <h1>Word Size :</h1>
+            {#each [40] as x}
+              {#if x == batchSize}
+                <button class="bg-black text-white px-1 border rounded"
+                  >{x}</button
+                >
+              {:else}
+                <button
+                  on:click={() => setBatchSize(x)}
+                  class="px-1 border rounded">{x}</button
+                >
+              {/if}
+            {/each}
+          </div>
+          <div class="flex">
+            <label for="" class="mr-2">Hide Credit</label>
+            <input type="checkbox" bind:checked={hideCredit} name="" id="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  {/if}
+
+  <button
+    on:click={showHelp}
+    class={`touch-none fixed z-20 right-4 top-16 rounded-full h-8 w-8 shadow-md flex flex-col items-center justify-center bg-black`}
+  >
+    <div class="text-white">?</div>
+  </button>
+
+  {#if showingHelp}
+    <div
+      transition:slide
+      class=" fixed z-30 h-screen w-screen bg-white text-sm top-0 text-black flex justify-center items-center px-8"
+    >
+      <div class="list-disc w-full max-w-md">
+        <h1
+          class="w-full text-center mb-6 text-xl mx-auto font-mono border-b pb-1"
+        >
+          How to use
+        </h1>
+        <div class="w-full flex flex-col justify-center items-start gap-2">
+          <li class="">
+            Tap the card /
+            <code class="px-1 bg-black text-white rounded mx-1">Space</code> to switch
+            between meaning and vocab
+          </li>
+          <li class="">
+            Tap previous / <code class="mx-1 px-1 bg-black text-white rounded"
+              >Left Arrow</code
+            > to show the previous vocab
+          </li>
+          <li class="">
+            Tap next / <code class="mx-1 px-1 bg-black text-white rounded"
+              >Right Arrow</code
+            > to show the next vocab
+          </li>
+          <li class="">Tap 'I Know It!' to hide the vocab.</li>
+        </div>
+      </div>
     </div>
   {/if}
 
@@ -77,5 +166,7 @@
     <Kanji />
   {/if}
 
-  <Credit />
+  {#if !hideCredit}
+    <Credit />
+  {/if}
 </section>

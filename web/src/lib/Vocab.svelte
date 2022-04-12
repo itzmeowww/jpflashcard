@@ -5,7 +5,7 @@
   import n2 from "../data/n2_vocab.json";
   import n1 from "../data/n1_vocab.json";
   import ProgressBar from "./ProgressBar.svelte";
-  import { slide, blur, fade } from "svelte/transition";
+
   const words = {
     N5: n5,
     N4: n4,

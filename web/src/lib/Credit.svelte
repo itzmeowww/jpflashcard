@@ -2,13 +2,13 @@
   <div
     class="w-screen py-4 flex flex-col gap-2 justify-center items-center bg-black"
   >
-    <h1 class="text-white text-center font-mono text-sm">
+    <h1 class="text-white text-center font-mono text-xs">
       JLPT vocab list was retrived from
       <a class="text-blue-400" href="https://jlptsensei.com"
         >https://jlptsensei.com</a
       >
     </h1>
-    <h1 class="text-white text-center font-mono text-sm">
+    <h1 class="text-white text-center font-mono text-xs">
       The source code is available on
       <a
         class="text-blue-400"
