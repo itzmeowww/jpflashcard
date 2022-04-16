@@ -1,7 +1,9 @@
 <script>
   import physics from "../data/physics.json";
-  import ProgressBar from "./ProgressBar.svelte";
-
+  import Controller from "./Controller.svelte";
+  import FlashCard from "./FlashCard.svelte";
+  import WordSelector from "./WordSelector.svelte";
+  const groups = ["Physics"];
   const words = {
     Physics: physics,
   };
@@ -32,7 +34,7 @@
     } else completed = false;
   }
 
-  ["Physics"].forEach((x) => {
+  groups.forEach((x) => {
     while (status[x].list.length < words[x].length) {
       status[x].list.push(false);
     }
@@ -44,26 +46,18 @@
         end: Math.min(batchSize * (i + 1) - 1, words[x].length - 1),
       });
     }
-    // console.log(status[x]);
   });
 
   let progress = 0;
 
   let completed = false;
-  let currentWordSet = "Physics";
+  let currentWordSet = groups[0];
   $: wordId = status[currentWordSet].lastIdx;
   let showMeaning = false;
   $: title = currentWordSet + "";
 
   $: word = words[currentWordSet][wordId];
 
-  const setCurrentWordSet = (x) => {
-    if (x == currentWordSet) return;
-    currentWordSet = x;
-    setHideMeaning();
-    if (currentBatch != 0) currentBatch = 0;
-    wordId = words[x].lastIdx;
-  };
   const setCurrentBatch = (x) => {
     // console.log(x);
     if (x == currentBatch) return;
@@ -72,166 +66,52 @@
     wordId = status[currentWordSet].batches[x].start;
   };
 
-  const prevWord = () => {
-    let newWordId = wordId - 1;
-    // console.log(newWordId);
-    if (newWordId < startIdx) newWordId = endIdx;
-    // console.log(currentWordSet, startIdx, endIdx, wordId);
-    while (status[currentWordSet].list[newWordId] === true) {
-      newWordId--;
-      // console.log(newWordId);
-      if (newWordId < startIdx) newWordId = endIdx;
-
-      if (newWordId === wordId) {
-        completed = true;
-        break;
-      }
-    }
-
-    setHideMeaning();
-
-    wordId = newWordId;
-    status[currentWordSet].lastIdx = wordId;
-  };
-  const nextWord = () => {
-    let newWordId = wordId + 1;
-    if (newWordId > endIdx) newWordId = startIdx;
-    while (status[currentWordSet].list[newWordId] === true) {
-      newWordId++;
-      if (newWordId > endIdx) newWordId = startIdx;
-      if (newWordId === wordId) {
-        completed = true;
-        break;
-      }
-    }
-    setHideMeaning();
-
-    wordId = newWordId;
-    status[currentWordSet].lastIdx = wordId;
-  };
   const setHideMeaning = () => {
     showMeaning = false;
   };
-  const setShowMeaning = () => {
-    showMeaning = true;
-  };
-  const toggleMeaning = () => {
-    showMeaning = !showMeaning;
-  };
-
-  const updateStatus = () => {
-    status[currentWordSet].list[wordId] = true;
-    nextWord();
-  };
-
-  const onKeyPress = (e) => {
-    if (["Enter", "ArrowRight", "ArrowDown"].includes(e.code)) nextWord();
-    if (["Backspace", "ArrowLeft", "ArrowUp"].includes(e.code)) prevWord();
-
-    if (e.code === "Space") {
-      toggleMeaning();
-      e.preventDefault();
-    }
-  };
 </script>
 
-<svelte:window on:keydown={onKeyPress} />
 <svelte:head>
   <title>{title}</title>
 </svelte:head>
-<section class="relative  flex justify-center items-center flex-col gap-4">
+<section class="relative flex justify-center items-center flex-col gap-4">
   <div
     class="relative  w-screen max-w-full h-screen max-h-screen flex justify-center items-center flex-col gap-4"
   >
     <div>
       <h1 class="text-4xl font-mono touch-none">{title}</h1>
     </div>
-    <div class="w-64 px-2 flex justify-between items-center touch-none">
-      {#each ["Physics"] as x}
-        <button
-          on:click={() => {
-            setCurrentWordSet(x);
-          }}
-          class={`${
-            currentWordSet == x ? "bg-black text-white" : "bg-white"
-          } w-10 shadow-md rounded-md font-mono touch-none`}
-        >
-          {x}
-        </button>
-      {/each}
-    </div>
-    <div class="w-64 grid px-2 grid-cols-5 gap-2 border-t py-2">
-      {#each status[currentWordSet].batches as batchInfo, i}
-        <button
-          on:click={() => {
-            setCurrentBatch(i);
-          }}
-          class={`${
-            currentBatch == i ? "bg-black text-white" : "bg-white"
-          } w-10 shadow-md rounded-md font-mono touch-none text-sm`}
-          >{i + 1}</button
-        >
-      {/each}
-    </div>
+    <WordSelector
+      parentSetCurrentBatch={setCurrentBatch}
+      bind:status
+      bind:currentBatch
+      bind:currentWordSet
+      {groups}
+      bind:wordId
+      bind:showMeaning
+      {words}
+    />
 
-    <div
-      class="relative w-64 h-40 rounded-lg shadow-md bg-white flex  justify-center items-center overflow-hidden cursor-pointer select-none touch-none"
-    >
-      <div
-        class="left-2 top-2 absolute w-7 h-7 border rounded-full flex items-center justify-center"
-      >
-        <h1 class="text-xs">{wordId + 1}</h1>
+    <FlashCard bind:completed num={wordId + 1} bind:showMeaning>
+      <div slot="word">
+        <h1 class="text-2xl">{word.kanji}</h1>
+        <h1 class="text-sm">{word.hiragana}</h1>
       </div>
-      {#if completed}
-        <div
-          on:click={setHideMeaning}
-          class={`bg-black text-white absolute w-64 h-full flex-col justify-center items-center py-4 gap-2 transition-all flex px-4 text-center`}
-        >
-          <h1 class="text-md font-light font-mono">Completed</h1>
-        </div>
-      {:else if showMeaning}
-        <div
-          on:click={setHideMeaning}
-          class={`absolute  w-64 h-full flex-col justify-center items-center py-4 gap-2 transition-all flex px-4 text-center`}
-        >
-          <h1 class="text-md font-light">{word.meaning}</h1>
-        </div>
-      {:else}
-        <div
-          on:click={setShowMeaning}
-          class={`absolute w-64 h-full flex-col justify-center items-center py-4 gap-2 flex`}
-        >
-          <h1 class="text-2xl">{word.kanji}</h1>
-          <h1 class="text-sm">{word.hiragana}</h1>
-          <!-- <h1>{vr.string}</h1> -->
-        </div>
-      {/if}
-    </div>
 
-    <ProgressBar startIdx={startIdx + 1} {progress} endIdx={endIdx + 1} />
-    <div class="w-64 flex items-center justify-between font-mono text-sm">
-      <button
-        on:click={prevWord}
-        class="w-5/12 bg-white px-4 py-1 rounded-md shadow-md hover:bg-black hover:text-white active:bg-black active:text-white  touch-none"
-      >
-        previous
-      </button>
+      <div slot="meaning">
+        <h1 class="text-md font-light">{word.meaning}</h1>
+      </div>
+    </FlashCard>
 
-      <button
-        on:click={nextWord}
-        class="w-5/12 bg-white px-4 py-1 rounded-md shadow-md
-        hover:bg-black hover:text-white active:bg-black active:text-white  touch-none"
-      >
-        next
-      </button>
-    </div>
-    <div class="w-64 flex items-center justify-between font-mono text-sm">
-      <button
-        on:click={updateStatus}
-        class="w-full bg-white px-4 py-1 rounded-md shadow-md hover:bg-black hover:text-white active:bg-black active:text-white  touch-none"
-      >
-        I Know It!
-      </button>
-    </div>
+    <Controller
+      bind:showMeaning
+      bind:completed
+      bind:currentWordSet
+      bind:startIdx
+      bind:endIdx
+      bind:progress
+      bind:status
+      bind:wordId
+    />
   </div>
 </section>
