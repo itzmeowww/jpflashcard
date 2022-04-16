@@ -11,8 +11,6 @@
 
   let mode = "vocab";
 
-  let isDarkMode = false;
-
   const setMode = (x) => {
     console.log(x);
     if (x != mode) mode = x;

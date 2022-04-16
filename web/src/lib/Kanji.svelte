@@ -222,7 +222,9 @@
           class={`absolute  w-64 h-full overflow-y-auto flex-col justify-center items-center py-4 gap-2 transition-all flex px-4 text-center`}
         >
           <h1 class="text-md font-light">{word.meaning}</h1>
-          <div class="flex flex-col justify-center items-center text-xs gap-1">
+          <div
+            class="flex flex-col justify-center items-center text-xs gap-1 divide-y"
+          >
             <div class="flex gap-2">
               <h1 class="font-bold">on</h1>
               <h1>{word.on[0].string}</h1>
