@@ -1,40 +1,12 @@
 <script>
-  import n5 from "../data/n5_vocab.json";
-  import n4 from "../data/n4_vocab.json";
-  import n3 from "../data/n3_vocab.json";
-  import n2 from "../data/n2_vocab.json";
-  import n1 from "../data/n1_vocab.json";
+  import physics from "../data/physics.json";
   import ProgressBar from "./ProgressBar.svelte";
 
   const words = {
-    N5: n5,
-    N4: n4,
-    N3: n3,
-    N2: n2,
-    N1: n1,
+    Physics: physics,
   };
   let status = {
-    N5: {
-      lastIdx: 0,
-      list: [],
-      batches: [],
-    },
-    N4: {
-      lastIdx: 0,
-      list: [],
-      batches: [],
-    },
-    N3: {
-      lastIdx: 0,
-      list: [],
-      batches: [],
-    },
-    N2: {
-      lastIdx: 0,
-      list: [],
-      batches: [],
-    },
-    N1: {
+    Physics: {
       lastIdx: 0,
       list: [],
       batches: [],
@@ -60,7 +32,7 @@
     } else completed = false;
   }
 
-  ["N5", "N4", "N3", "N2", "N1"].forEach((x) => {
+  ["Physics"].forEach((x) => {
     while (status[x].list.length < words[x].length) {
       status[x].list.push(false);
     }
@@ -78,10 +50,10 @@
   let progress = 0;
 
   let completed = false;
-  let currentWordSet = "N5";
+  let currentWordSet = "Physics";
   $: wordId = status[currentWordSet].lastIdx;
   let showMeaning = false;
-  $: title = currentWordSet + " Vocab";
+  $: title = currentWordSet + "";
 
   $: word = words[currentWordSet][wordId];
 
@@ -175,7 +147,7 @@
       <h1 class="text-4xl font-mono touch-none">{title}</h1>
     </div>
     <div class="w-64 px-2 flex justify-between items-center touch-none">
-      {#each ["N5", "N4", "N3", "N2", "N1"] as x}
+      {#each ["Physics"] as x}
         <button
           on:click={() => {
             setCurrentWordSet(x);
@@ -208,7 +180,7 @@
       <div
         class="left-2 top-2 absolute w-7 h-7 border rounded-full flex items-center justify-center"
       >
-        <h1 class="text-xs">{word.num}</h1>
+        <h1 class="text-xs">{wordId + 1}</h1>
       </div>
       {#if completed}
         <div
@@ -223,22 +195,19 @@
           class={`absolute  w-64 h-full flex-col justify-center items-center py-4 gap-2 transition-all flex px-4 text-center`}
         >
           <h1 class="text-md font-light">{word.meaning}</h1>
-          <h1 class="text-xs font-light">({word.type})</h1>
         </div>
       {:else}
         <div
           on:click={setShowMeaning}
           class={`absolute w-64 h-full flex-col justify-center items-center py-4 gap-2 flex`}
         >
-          <h1 class="text-2xl">{word.word}</h1>
-
+          <h1 class="text-2xl">{word.kanji}</h1>
+          <h1 class="text-sm">{word.hiragana}</h1>
           <!-- <h1>{vr.string}</h1> -->
-          {#if !word.isKatakana && word.reading != word.reading_hiragana}
-            <h1 class="text-2xl">{word.reading_hiragana}</h1>
-          {/if}
         </div>
       {/if}
     </div>
+
     <ProgressBar startIdx={startIdx + 1} {progress} endIdx={endIdx + 1} />
     <div class="w-64 flex items-center justify-between font-mono text-sm">
       <button

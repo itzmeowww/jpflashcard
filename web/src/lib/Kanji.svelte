@@ -155,7 +155,10 @@
     if (["Enter", "ArrowRight", "ArrowDown"].includes(e.code)) nextWord();
     if (["Backspace", "ArrowLeft", "ArrowUp"].includes(e.code)) prevWord();
 
-    if (e.code === "Space") toggleMeaning();
+    if (e.code === "Space") {
+      toggleMeaning();
+      e.preventDefault();
+    }
   };
 </script>
 

@@ -6,6 +6,7 @@
   import Vocab from "./lib/Vocab.svelte";
   import Credit from "./lib/Credit.svelte";
   import Kanji from "./lib/Kanji.svelte";
+  import Physics from "./lib/Physics.svelte";
   import StyledButton from "./lib/StyledButton.svelte";
 
   let mode = "vocab";
@@ -13,6 +14,7 @@
   let isDarkMode = false;
 
   const setMode = (x) => {
+    console.log(x);
     if (x != mode) mode = x;
   };
 
@@ -159,12 +161,29 @@
       }}
       text="Kanji"
     />
+    <StyledButton
+      onClick={() => {
+        setMode("physics");
+      }}
+      text="Physics"
+    />
   </div>
   {#if mode == "vocab"}
     <Vocab />
   {:else if mode == "kanji"}
     <Kanji />
+  {:else if mode == "physics"}
+    <Physics />
   {/if}
+  <h1 class="mb-3 text-red-500 text-xs font-thin max-w-sm text-center">
+    The word list was generated automatically, if you found any error, please
+    <a
+      href="mailto:winthanasan@gmail.com?subject=Error in JLPT Flashcard website"
+      class="underline"
+    >
+      email</a
+    > me.
+  </h1>
 
   {#if !hideCredit}
     <Credit />
