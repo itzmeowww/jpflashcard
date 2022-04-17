@@ -1,4 +1,5 @@
 <script>
+  export let settings;
   import n5 from "../data/n5_kanji.json";
   import n4 from "../data/n4_kanji.json";
   import n3 from "../data/n3_kanji.json";
@@ -124,6 +125,7 @@
     </FlashCard>
 
     <Controller
+      {settings}
       bind:showMeaning
       bind:completed
       bind:currentWordSet

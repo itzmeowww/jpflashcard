@@ -1,4 +1,5 @@
 <script>
+  export let settings;
   import physics from "../data/physics.json";
   import Controller from "./Controller.svelte";
   import FlashCard from "./FlashCard.svelte";
@@ -93,17 +94,18 @@
     />
 
     <FlashCard bind:completed num={wordId + 1} bind:showMeaning>
-      <div slot="word">
+      <div slot="word" class="text-center">
         <h1 class="text-2xl">{word.kanji}</h1>
         <h1 class="text-sm">{word.hiragana}</h1>
       </div>
 
-      <div slot="meaning">
+      <div slot="meaning" class="text-center">
         <h1 class="text-md font-light">{word.meaning}</h1>
       </div>
     </FlashCard>
 
     <Controller
+      {settings}
       bind:showMeaning
       bind:completed
       bind:currentWordSet

@@ -1,4 +1,5 @@
 <script>
+  import { ConfettiExplosion } from "svelte-confetti-explosion";
   export let completed, num, showMeaning;
   const setHideMeaning = () => {
     showMeaning = false;
@@ -21,6 +22,7 @@
       on:click={setHideMeaning}
       class={`bg-black text-white absolute w-full h-full flex-col justify-center items-center py-4 gap-2 transition-all flex px-4 text-center`}
     >
+      <ConfettiExplosion particleSize={4} particleCount={400} force={0.3} />
       <h1 class="text-md font-light font-mono">Completed</h1>
     </div>
   {:else if showMeaning}

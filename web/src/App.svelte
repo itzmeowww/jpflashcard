@@ -1,18 +1,24 @@
 <script>
   import "./lib/Tailwind.css";
 
-  import { slide, blur, fade } from "svelte/transition";
+  import { slide, fade } from "svelte/transition";
 
   import Vocab from "./lib/Vocab.svelte";
   import Credit from "./lib/Credit.svelte";
   import Kanji from "./lib/Kanji.svelte";
   import Physics from "./lib/Physics.svelte";
   import StyledButton from "./lib/StyledButton.svelte";
-
+  import Settings from "./lib/Settings.svelte";
+  import Help from "./lib/Help.svelte";
+  let settings = {
+    showMeaningBeforeHide: false,
+    showMeaningBeforeChange: false,
+    hideCredit: false,
+    batchSize: 40,
+  };
   let mode = "vocab";
 
   const setMode = (x) => {
-    console.log(x);
     if (x != mode) mode = x;
   };
 
@@ -29,10 +35,8 @@
     showingSetting = false;
   };
 
-  let batchSize = 40;
-  let hideCredit = false;
   const setBatchSize = (x) => {
-    batchSize = x;
+    settings.batchSize = x;
   };
 </script>
 
@@ -71,39 +75,7 @@
   {/if}
 
   {#if showingSetting}
-    <div
-      transition:slide
-      class=" fixed z-30 h-screen w-full bg-white text-sm top-0 text-black flex justify-center items-center px-4"
-    >
-      <div class="w-full max-w-md">
-        <h1
-          class="w-full text-center border-b pb-1 mb-6 text-xl mx-auto font-mono"
-        >
-          Settings
-        </h1>
-        <div class="w-full flex flex-col gap-2 justify-center items-center">
-          <div class="flex">
-            <h1>Word Size :</h1>
-            {#each [40] as x}
-              {#if x == batchSize}
-                <button class="bg-black text-white px-1 border rounded"
-                  >{x}</button
-                >
-              {:else}
-                <button
-                  on:click={() => setBatchSize(x)}
-                  class="px-1 border rounded">{x}</button
-                >
-              {/if}
-            {/each}
-          </div>
-          <div class="flex">
-            <label for="" class="mr-2">Hide Credit</label>
-            <input type="checkbox" bind:checked={hideCredit} name="" id="" />
-          </div>
-        </div>
-      </div>
-    </div>
+    <Settings bind:settings />
   {/if}
 
   <button
@@ -114,36 +86,7 @@
   </button>
 
   {#if showingHelp}
-    <div
-      transition:slide
-      class=" fixed z-30 h-screen w-screen bg-white text-sm top-0 text-black flex justify-center items-center px-8"
-    >
-      <div class="list-disc w-full max-w-md">
-        <h1
-          class="w-full text-center mb-6 text-xl mx-auto font-mono border-b pb-1"
-        >
-          How to use
-        </h1>
-        <div class="w-full flex flex-col justify-center items-start gap-2">
-          <li class="">
-            Tap the card /
-            <code class="px-1 bg-black text-white rounded mx-1">Space</code> to switch
-            between meaning and vocab
-          </li>
-          <li class="">
-            Tap previous / <code class="mx-1 px-1 bg-black text-white rounded"
-              >Left Arrow</code
-            > to show the previous vocab
-          </li>
-          <li class="">
-            Tap next / <code class="mx-1 px-1 bg-black text-white rounded"
-              >Right Arrow</code
-            > to show the next vocab
-          </li>
-          <li class="">Tap 'I Know It!' to hide the vocab.</li>
-        </div>
-      </div>
-    </div>
+    <Help />
   {/if}
 
   <div class="fixed z-20 top-4 flex justify-center gap-2">
@@ -167,11 +110,11 @@
     />
   </div>
   {#if mode == "vocab"}
-    <Vocab />
+    <Vocab {settings} />
   {:else if mode == "kanji"}
-    <Kanji />
+    <Kanji {settings} />
   {:else if mode == "physics"}
-    <Physics />
+    <Physics {settings} />
   {/if}
   <h1 class="mb-3 text-red-500 text-xs font-thin max-w-sm text-center">
     The word list was generated automatically, if you found any error, please
@@ -183,7 +126,7 @@
     > me.
   </h1>
 
-  {#if !hideCredit}
+  {#if !settings.hideCredit}
     <Credit />
   {/if}
 </section>

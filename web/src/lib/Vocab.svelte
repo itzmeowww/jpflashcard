@@ -1,4 +1,5 @@
 <script>
+  export let settings;
   import n5 from "../data/n5_vocab.json";
   import n4 from "../data/n4_vocab.json";
   import n3 from "../data/n3_vocab.json";
@@ -101,12 +102,12 @@
       {words}
     />
     <FlashCard bind:completed num={word.num} bind:showMeaning>
-      <div slot="meaning">
+      <div slot="meaning" class="text-center">
         <h1 class="text-md font-light">{word.meaning}</h1>
         <h1 class="text-xs font-light">({word.type})</h1>
       </div>
       <!-- <h1>{vr.string}</h1> -->
-      <div slot="word">
+      <div slot="word" class="text-center">
         <h1 class="text-2xl">{word.word}</h1>
         {#if !word.isKatakana && word.reading != word.reading_hiragana}
           <h1 class="text-2xl">{word.reading_hiragana}</h1>
@@ -115,6 +116,7 @@
     </FlashCard>
 
     <Controller
+      {settings}
       bind:showMeaning
       bind:completed
       bind:currentWordSet
