@@ -14,5 +14,7 @@
     "tailwindcss": "^3.0.23",
     "vite": "^2.8.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "svelte-confetti-explosion": "^0.2.0"
+  }
 }
