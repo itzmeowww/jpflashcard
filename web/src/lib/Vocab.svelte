@@ -1,5 +1,6 @@
 <script>
-  export let settings;
+  export let settings, selecting;
+  import { slide, fade } from "svelte/transition";
   import n5 from "../data/n5_vocab.json";
   import n4 from "../data/n4_vocab.json";
   import n3 from "../data/n3_vocab.json";
@@ -84,10 +85,19 @@
 <svelte:head>
   <title>{title}</title>
 </svelte:head>
-<section class="relative  flex justify-center items-center flex-col gap-4">
+<section
+  transition:fade
+  class="relative flex justify-center items-center flex-col gap-4"
+>
   <div
     class="relative  w-screen max-w-full h-screen max-h-screen flex justify-center items-center flex-col gap-4"
   >
+    <button
+      on:click={() => {
+        selecting = true;
+      }}
+      class="fixed top-4 underline font-mono">go back</button
+    >
     <div>
       <h1 class="text-4xl font-mono touch-none">{title}</h1>
     </div>
@@ -101,7 +111,7 @@
       bind:showMeaning
       {words}
     />
-    <FlashCard bind:completed num={word.num} bind:showMeaning>
+    <FlashCard bind:completed num={word.num} bind:showMeaning {settings}>
       <div slot="meaning" class="text-center">
         <h1 class="text-md font-light">{word.meaning}</h1>
         <h1 class="text-xs font-light">({word.type})</h1>

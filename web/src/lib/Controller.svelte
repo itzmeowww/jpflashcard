@@ -11,7 +11,12 @@
     isRandom = !isRandom;
   };
   const setHideMeaning = () => {
-    showMeaning = false;
+    if (settings.reversed) showMeaning = true;
+    else showMeaning = false;
+  };
+  const setShowMeaning = () => {
+    if (settings.reversed) showMeaning = false;
+    else showMeaning = true;
   };
 
   const randWord = () => {
@@ -86,9 +91,9 @@
 
   const handleShowingMeaning = (toDo, mustShowMeaning) => {
     if (mustShowMeaning) {
-      showMeaning = true;
+      setShowMeaning();
       setTimeout(() => {
-        showMeaning = false;
+        setHideMeaning();
         toDo();
       }, 750);
     } else {

@@ -15,10 +15,13 @@
     showMeaningBeforeChange: false,
     hideCredit: false,
     batchSize: 40,
+    reversed: false,
   };
   let mode = "vocab";
+  let selecting = true;
 
   const setMode = (x) => {
+    selecting = false;
     if (x != mode) mode = x;
   };
 
@@ -89,32 +92,65 @@
     <Help />
   {/if}
 
-  <div class="fixed z-20 top-4 flex justify-center gap-2">
-    <StyledButton
-      onClick={() => {
-        setMode("vocab");
-      }}
-      text="Vocab"
-    />
-    <StyledButton
-      onClick={() => {
-        setMode("kanji");
-      }}
-      text="Kanji"
-    />
-    <StyledButton
-      onClick={() => {
-        setMode("physics");
-      }}
-      text="Physics"
-    />
-  </div>
-  {#if mode == "vocab"}
-    <Vocab {settings} />
+  {#if selecting}
+    <div
+      class="flex-1 flex flex-col h-full justify-center items-center w-full gap-4"
+    >
+      <h1 class="text-lg font-mono">Select Your Flashcard</h1>
+      <div class="flex justify-center gap-2 border flex-col rounded p-3 mx-3">
+        <div class="flex justify-center gap-2">
+          <StyledButton
+            onClick={() => {
+              setMode("vocab");
+            }}
+            text="Vocab"
+          />
+          <StyledButton
+            onClick={() => {
+              setMode("kanji");
+            }}
+            text="Kanji"
+          />
+        </div>
+        <h1 class="text-center font-mono text-xs">
+          JLPT vocab and kanji from
+          <a class="text-blue-400" href="https://jlptsensei.com"
+            >https://jlptsensei.com</a
+          >
+        </h1>
+      </div>
+      <div class="flex justify-center gap-2 border flex-col rounded p-3 mx-3">
+        <div>
+          <StyledButton
+            onClick={() => {
+              setMode("physics");
+            }}
+            text="Physics all"
+          />
+          <StyledButton
+            onClick={() => {}}
+            text="Physics by chapters"
+            disabled={true}
+          />
+        </div>
+      </div>
+      <div class="flex justify-center gap-2 border flex-col rounded p-3 mx-3">
+        <div>
+          <StyledButton onClick={() => {}} text="JPlang all" disabled={true} />
+          <StyledButton
+            onClick={() => {}}
+            text="JPlang by chapters"
+            disabled={true}
+          />
+        </div>
+      </div>
+    </div>
+  {:else if mode == "vocab"}
+    <Vocab {settings} bind:selecting />
   {:else if mode == "kanji"}
-    <Kanji {settings} />
+    <Kanji {settings} bind:selecting />
   {:else if mode == "physics"}
-    <Physics {settings} />
+    <Physics {settings} bind:selecting />
   {/if}
   <h1 class="mb-3 text-red-500 text-xs font-thin max-w-sm text-center">
     The word list was generated automatically, if you found any error, please

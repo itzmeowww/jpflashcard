@@ -1,9 +1,11 @@
 <script>
-  export let settings;
+  export let settings, selecting;
+  import { slide, fade } from "svelte/transition";
   import physics from "../data/physics.json";
   import Controller from "./Controller.svelte";
   import FlashCard from "./FlashCard.svelte";
   import WordSelector from "./WordSelector.svelte";
+
   const groups = ["Physics"];
   const words = {
     Physics: physics,
@@ -75,10 +77,19 @@
 <svelte:head>
   <title>{title}</title>
 </svelte:head>
-<section class="relative flex justify-center items-center flex-col gap-4">
+<section
+  transition:fade
+  class="relative flex justify-center items-center flex-col gap-4"
+>
   <div
     class="relative  w-screen max-w-full h-screen max-h-screen flex justify-center items-center flex-col gap-4"
   >
+    <button
+      on:click={() => {
+        selecting = true;
+      }}
+      class="fixed top-4 underline font-mono">go back</button
+    >
     <div>
       <h1 class="text-4xl font-mono touch-none">{title}</h1>
     </div>
@@ -93,7 +104,7 @@
       {words}
     />
 
-    <FlashCard bind:completed num={wordId + 1} bind:showMeaning>
+    <FlashCard bind:completed num={wordId + 1} bind:showMeaning {settings}>
       <div slot="word" class="text-center">
         <h1 class="text-2xl">{word.kanji}</h1>
         <h1 class="text-sm">{word.hiragana}</h1>

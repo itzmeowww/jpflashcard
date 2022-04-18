@@ -37,7 +37,11 @@
           id=""
         />
       </div>
-      <div class="flex">
+      <!-- <div class="flex">
+        <label for="" class="mr-2">Reverse</label>
+        <input type="checkbox" bind:checked={settings.reversed} name="" id="" />
+      </div> -->
+      <div class="flex items-center">
         <label for="" class="mr-2">Show Meaning Before Hiding Word</label>
         <input
           type="checkbox"
@@ -46,7 +50,7 @@
           id=""
         />
       </div>
-      <div class="flex">
+      <div class="flex items-center">
         <label for="" class="mr-2">Show Meaning Before Prev/Next Word</label>
         <input
           type="checkbox"
