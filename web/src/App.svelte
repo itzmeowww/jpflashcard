@@ -7,9 +7,15 @@
   import Credit from "./lib/Credit.svelte";
   import Kanji from "./lib/Kanji.svelte";
   import Physics from "./lib/Physics.svelte";
+  import PhysicsChapter from "./lib/PhysicsChapter.svelte";
+  import JpLangChapter from "./lib/JpLangChapter.svelte";
+
+  import GrammarList from "./lib/GrammarList.svelte";
+
   import StyledButton from "./lib/StyledButton.svelte";
   import Settings from "./lib/Settings.svelte";
   import Help from "./lib/Help.svelte";
+
   let settings = {
     showMeaningBeforeHide: false,
     showMeaningBeforeChange: false,
@@ -128,9 +134,10 @@
             text="Physics all"
           />
           <StyledButton
-            onClick={() => {}}
+            onClick={() => {
+              setMode("physicschapter");
+            }}
             text="Physics by chapters"
-            disabled={true}
           />
         </div>
       </div>
@@ -138,11 +145,34 @@
         <div>
           <StyledButton onClick={() => {}} text="JPlang all" disabled={true} />
           <StyledButton
-            onClick={() => {}}
+            onClick={() => {
+              setMode("jplangchapter");
+            }}
             text="JPlang by chapters"
-            disabled={true}
           />
         </div>
+        <h1 class="text-center font-mono text-xs">
+          Vocab from
+          <a class="text-blue-400" href="https://jplang.tufs.ac.jp"
+            >https://jplang.tufs.ac.jp</a
+          >
+        </h1>
+      </div>
+      <div class="flex justify-center gap-2 border flex-col rounded p-3 mx-3">
+        <div>
+          <StyledButton
+            onClick={() => {
+              setMode("grammar");
+            }}
+            text="Sentence Structure"
+          />
+        </div>
+        <h1 class="text-center font-mono text-xs">
+          Sentence Structure from
+          <a class="text-blue-400" href="https://jplang.tufs.ac.jp"
+            >https://jplang.tufs.ac.jp</a
+          >
+        </h1>
       </div>
     </div>
   {:else if mode == "vocab"}
@@ -151,6 +181,12 @@
     <Kanji {settings} bind:selecting />
   {:else if mode == "physics"}
     <Physics {settings} bind:selecting />
+  {:else if mode == "physicschapter"}
+    <PhysicsChapter {settings} bind:selecting />
+  {:else if mode == "jplangchapter"}
+    <JpLangChapter {settings} bind:selecting />
+  {:else if mode == "grammar"}
+    <GrammarList bind:selecting />
   {/if}
   <h1 class="mb-3 text-red-500 text-xs font-thin max-w-sm text-center">
     The word list was generated automatically, if you found any error, please

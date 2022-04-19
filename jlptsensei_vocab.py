@@ -22,7 +22,7 @@ def generate(idx):
     words = []
 
     for page in pages:
-        print(f'fecting ${page} ...')
+        print(f'fetching  {page} ...')
         res = requests.get(page)
         soup = BeautifulSoup(res.content, 'html.parser')
         table = soup.find('table')
@@ -81,7 +81,7 @@ def generate(idx):
             # print(v_type)
             # print(vm)
         # print()
-        print(f'fecting {page} ... completed')
+        print(f'fetching {page} ... completed')
 
     json_string = json.dumps(words)
     path = f'web/src/data/{filename}.json'

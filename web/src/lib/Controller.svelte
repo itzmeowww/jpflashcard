@@ -11,12 +11,10 @@
     isRandom = !isRandom;
   };
   const setHideMeaning = () => {
-    if (settings.reversed) showMeaning = true;
-    else showMeaning = false;
+    showMeaning = false;
   };
   const setShowMeaning = () => {
-    if (settings.reversed) showMeaning = false;
-    else showMeaning = true;
+    showMeaning = true;
   };
 
   const randWord = () => {
