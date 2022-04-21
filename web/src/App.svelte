@@ -47,6 +47,57 @@
   const setBatchSize = (x) => {
     settings.batchSize = x;
   };
+
+  const flashCards = [
+    {
+      credit: "JLPT vocab and kanji from",
+      url: "https://jlptsensei.com",
+      cards: [
+        {
+          title: "Vocab",
+          id: "vocab",
+        },
+        {
+          title: "Kanji",
+          id: "kanji",
+        },
+      ],
+    },
+    {
+      credit: "",
+      url: "",
+      cards: [
+        {
+          title: "Physics All",
+          id: "physics",
+        },
+        {
+          title: "Physics by Chapter",
+          id: "physicschapter",
+        },
+      ],
+    },
+    {
+      credit: "Vocab from",
+      url: "https://jplang.tufs.ac.jp",
+      cards: [
+        {
+          title: "JPlang by chapter",
+          id: "jplangchapter",
+        },
+      ],
+    },
+    {
+      credit: "Sentence Structure from",
+      url: "https://jplang.tufs.ac.jp",
+      cards: [
+        {
+          title: "Sentence Structure",
+          id: "grammar",
+        },
+      ],
+    },
+  ];
 </script>
 
 <section
@@ -103,77 +154,25 @@
       class="flex-1 flex flex-col h-full justify-center items-center w-full gap-4"
     >
       <h1 class="text-lg font-mono">Select Your Flashcard</h1>
-      <div class="flex justify-center gap-2 border flex-col rounded p-3 mx-3">
-        <div class="flex justify-center gap-2">
-          <StyledButton
-            onClick={() => {
-              setMode("vocab");
-            }}
-            text="Vocab"
-          />
-          <StyledButton
-            onClick={() => {
-              setMode("kanji");
-            }}
-            text="Kanji"
-          />
+
+      {#each flashCards as flashCard}
+        <div class="flex justify-center gap-2 border flex-col rounded p-3 mx-3">
+          <div class="flex justify-center gap-2">
+            {#each flashCard.cards as card}
+              <StyledButton
+                onClick={() => {
+                  setMode(card.id);
+                }}
+                text={card.title}
+              />
+            {/each}
+          </div>
+          <h1 class="text-center font-mono text-xs">
+            {flashCard.credit}
+            <a class="text-blue-400" href={flashCard.url}>{flashCard.url}</a>
+          </h1>
         </div>
-        <h1 class="text-center font-mono text-xs">
-          JLPT vocab and kanji from
-          <a class="text-blue-400" href="https://jlptsensei.com"
-            >https://jlptsensei.com</a
-          >
-        </h1>
-      </div>
-      <div class="flex justify-center gap-2 border flex-col rounded p-3 mx-3">
-        <div>
-          <StyledButton
-            onClick={() => {
-              setMode("physics");
-            }}
-            text="Physics all"
-          />
-          <StyledButton
-            onClick={() => {
-              setMode("physicschapter");
-            }}
-            text="Physics by chapters"
-          />
-        </div>
-      </div>
-      <div class="flex justify-center gap-2 border flex-col rounded p-3 mx-3">
-        <div>
-          <StyledButton onClick={() => {}} text="JPlang all" disabled={true} />
-          <StyledButton
-            onClick={() => {
-              setMode("jplangchapter");
-            }}
-            text="JPlang by chapters"
-          />
-        </div>
-        <h1 class="text-center font-mono text-xs">
-          Vocab from
-          <a class="text-blue-400" href="https://jplang.tufs.ac.jp"
-            >https://jplang.tufs.ac.jp</a
-          >
-        </h1>
-      </div>
-      <div class="flex justify-center gap-2 border flex-col rounded p-3 mx-3">
-        <div>
-          <StyledButton
-            onClick={() => {
-              setMode("grammar");
-            }}
-            text="Sentence Structure"
-          />
-        </div>
-        <h1 class="text-center font-mono text-xs">
-          Sentence Structure from
-          <a class="text-blue-400" href="https://jplang.tufs.ac.jp"
-            >https://jplang.tufs.ac.jp</a
-          >
-        </h1>
-      </div>
+      {/each}
     </div>
   {:else if mode == "vocab"}
     <Vocab {settings} bind:selecting />
