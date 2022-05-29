@@ -111,10 +111,10 @@
     <FlashCard bind:completed num={wordId + 1} bind:showMeaning {settings}>
       <div slot="word" class="text-center">
         <h1 class="text-2xl">{word.kanji}</h1>
-        <h1 class="text-sm">{word.hiragana}</h1>
       </div>
 
       <div slot="meaning" class="text-center">
+        <h1 class="text-sm">{word.hiragana}</h1>
         <h1 class="text-md font-light">{word.meaning}</h1>
       </div>
     </FlashCard>
