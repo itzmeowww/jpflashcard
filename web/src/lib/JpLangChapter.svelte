@@ -165,11 +165,11 @@
 
     <FlashCard bind:completed num={wordId + 1} bind:showMeaning {settings}>
       <div slot="word" class="text-center">
-        <h1 class="text-lg">{word.kanji}</h1>
-        <h1 class="text-lg">{word.word}</h1>
+        <h1 class="text-lg">{word.kanji == "" ? word.word : word.kanji}</h1>
       </div>
 
       <div slot="meaning" class="text-center w-full">
+        <h1 class="text-lg">{word.kanji == "" ? "" : word.word}</h1>
         <h1 class="text-md font-light">{word.translation}</h1>
       </div>
     </FlashCard>
