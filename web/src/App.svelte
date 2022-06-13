@@ -9,6 +9,7 @@
   import Physics from "./lib/Physics.svelte";
   import PhysicsChapter from "./lib/PhysicsChapter.svelte";
   import JpLangChapter from "./lib/JpLangChapter.svelte";
+  import JpLangChapterRev from "./lib/JpLangChapterRev.svelte";
 
   import GrammarList from "./lib/GrammarList.svelte";
 
@@ -84,6 +85,10 @@
         {
           title: "JPlang by chapter",
           id: "jplangchapter",
+        },
+        {
+          title: "JPlang by chapter rev",
+          id: "jplangchapterrev",
         },
       ],
     },
@@ -184,6 +189,8 @@
     <PhysicsChapter {settings} bind:selecting />
   {:else if mode == "jplangchapter"}
     <JpLangChapter {settings} bind:selecting />
+  {:else if mode == "jplangchapterrev"}
+    <JpLangChapterRev {settings} bind:selecting />
   {:else if mode == "grammar"}
     <GrammarList bind:selecting />
   {/if}
