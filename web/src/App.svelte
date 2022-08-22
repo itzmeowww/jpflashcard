@@ -12,6 +12,7 @@
   import JpLangChapterRev from "./lib/JpLangChapterRev.svelte";
 
   import GrammarList from "./lib/GrammarList.svelte";
+  import GrammarListMid from "./lib/GrammarListMid.svelte";
 
   import StyledButton from "./lib/StyledButton.svelte";
   import Settings from "./lib/Settings.svelte";
@@ -99,6 +100,10 @@
         {
           title: "Sentence Structure",
           id: "grammar",
+        },
+        {
+          title: "Sentence Structure Mid",
+          id: "grammar_mid",
         },
       ],
     },
@@ -193,6 +198,8 @@
     <JpLangChapterRev {settings} bind:selecting />
   {:else if mode == "grammar"}
     <GrammarList bind:selecting />
+  {:else if mode == "grammar_mid"}
+    <GrammarListMid bind:selecting />
   {/if}
   <h1 class="mb-3 text-red-500 text-xs font-thin max-w-sm text-center">
     The word list was generated automatically, if you found any error, please

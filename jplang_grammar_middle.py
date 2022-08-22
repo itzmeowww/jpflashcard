@@ -8,16 +8,18 @@ import romkan
 words = {}
 links = {}
 
+# https: // jplang.tufs.ac.jp/int2/bu/2/bu-1.html
+
 
 def generate(idx):
     chapter = idx
     pages = []
     # filename = f'{idx}_jplag'
     base_url = ''
-    if idx in [1, 4, 6, 7, 8, 13, 14, 15, 16, 27, 28]:
-        base_url = f'https://jplang.tufs.ac.jp/en/bu/{idx}/{idx}-1-1.html'
+    if idx in [3]:
+        base_url = f'https://jplang.tufs.ac.jp/int2/bu/{idx}/go-1.html'
     else:
-        base_url = f'https://jplang.tufs.ac.jp/en/bu/{idx}/{idx}-1.html'
+        base_url = f'https://jplang.tufs.ac.jp/int2/bu/{idx}/bu-1.html'
 
     print(base)
     pages.append(base_url)
@@ -49,14 +51,14 @@ def generate(idx):
         print(f'fetching {page} ... completed')
 
 
-for i in range(28):
+for i in range(21):
     generate(i+1)
 
 json_string = json.dumps(words, ensure_ascii=False)
 json_string2 = json.dumps(links)
 
-path = f'web/src/data/jplang_grammar.json'
-path2 = f'web/src/data/jplang_grammar_link.json'
+path = f'web/src/data/jplang_grammar_mid.json'
+path2 = f'web/src/data/jplang_grammar_mid_link.json'
 with open(path, 'w') as outfile:
     outfile.write(json_string)
     print(f'{len(words)} words are saved in {path} ')
