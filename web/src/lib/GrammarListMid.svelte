@@ -31,14 +31,14 @@
             <input
               type="checkbox"
               name=""
-              id={grammar.split(" ")[0]}
-              bind:checked={checked[grammar.split("　")[0]]}
+              id={`${key}-${grammar.split(" ")[0]}`}
+              bind:checked={checked[`${key}-${grammar.split(" ")[0]}`]}
               class="w-4"
             />
             <label
               for={grammar.split(" ")[0]}
               class={`w-full text-sm  break-all ${
-                checked[grammar.split("　")[0]] && "line-through"
+                checked[`${key}-${grammar.split(" ")[0]}`] && "line-through"
               }`}
             >
               {grammar.split("　").slice(1).join(" ")}

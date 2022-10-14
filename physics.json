@@ -1,0 +1,599 @@
+{
+  "\u00a75.1": [
+    {
+      "kanji": "\u6e29\u5ea6",
+      "meaning": " temperature",
+      "hiragana": "\u304a\u3093\u3069"
+    },
+    {
+      "kanji": "\u5b9a\u91cf\u5316",
+      "meaning": " quantification",
+      "hiragana": "\u3066\u3044\u308a\u3087\u3046\u304b"
+    },
+    {
+      "kanji": "\u6982\u5ff5",
+      "meaning": " concept",
+      "hiragana": "\u304c\u3044\u306d\u3093"
+    },
+    {
+      "kanji": "\u653e\u7f6e\u3059\u308b",
+      "meaning": " leave",
+      "hiragana": "\u307b\u3046\u3061\u3059\u308b"
+    },
+    {
+      "kanji": "\u4e00\u69d8\u306a",
+      "meaning": " uniform",
+      "hiragana": "\u3044\u3061\u3088\u3046\u306a"
+    },
+    {
+      "kanji": "\u63a5\u89e6",
+      "meaning": " contact",
+      "hiragana": "\u305b\u3063\u3057\u3087\u304f"
+    },
+    {
+      "kanji": "\u51b7\u6e29",
+      "meaning": " cold and warm",
+      "hiragana": "\u308c\u3044\u304a\u3093"
+    },
+    {
+      "kanji": "\u5ea6\u5408\u3044",
+      "meaning": " degree",
+      "hiragana": "\u3069\u3042\u3044"
+    },
+    {
+      "kanji": "\u71b1\u5e73\u8861",
+      "meaning": " thermal equilibrium",
+      "hiragana": "\u306d\u3064\u3078\u3044\u3053\u3046"
+    },
+    {
+      "kanji": "\u5408\u7406\u7684",
+      "meaning": " rational",
+      "hiragana": "\u3054\u3046\u308a\u3066\u304d"
+    },
+    {
+      "kanji": "\u6570\u5024",
+      "meaning": " numerical value",
+      "hiragana": "\u3059\u3046\u3061"
+    },
+    {
+      "kanji": "\u4f53\u7a4d",
+      "meaning": " volume",
+      "hiragana": "\u305f\u3044\u305b\u304d"
+    },
+    {
+      "kanji": "\u96fb\u6c17\u62b5\u6297",
+      "meaning": " electric resistance",
+      "hiragana": "\u3067\u3093\u304d\u3066\u3044\u3053\u3046"
+    },
+    {
+      "kanji": "\u6e29\u5ea6\u8a08",
+      "meaning": " thermometer",
+      "hiragana": "\u304a\u3093\u3069\u3051\u3044"
+    },
+    {
+      "kanji": "\u76ee\u76db\u308a",
+      "meaning": " divisions, scale",
+      "hiragana": "\u3081\u3082\u308a"
+    },
+    {
+      "kanji": "\u30bb\u30eb\u30b7\u30a6\u30b9\u5ea6",
+      "meaning": " Celsius degree",
+      "hiragana": "\u305b\u308b\u3057\u3046\u3059\u3069"
+    },
+    {
+      "kanji": "\u6442\u6c0f",
+      "meaning": " centigrade",
+      "hiragana": "\u305b\u3063\u3057"
+    },
+    {
+      "kanji": "\u6c17\u5727",
+      "meaning": " atmospheric pressure",
+      "hiragana": "\u304d\u3042\u3064"
+    },
+    {
+      "kanji": "\u5e73\u8861",
+      "meaning": " equilibrium",
+      "hiragana": "\u3078\u3044\u3053\u3046"
+    },
+    {
+      "kanji": "\u5171\u5b58",
+      "meaning": " coexistence",
+      "hiragana": "\u304d\u3087\u3046\u305e\u3093"
+    },
+    {
+      "kanji": "\u6cb8\u9a30\u3059\u308b",
+      "meaning": " boil",
+      "hiragana": "\u3075\u3063\u3068\u3046\u3059\u308b"
+    },
+    {
+      "kanji": "\u5916\u633f",
+      "meaning": " extrapolation",
+      "hiragana": "\u304c\u3044\u305d\u3046"
+    },
+    {
+      "kanji": "\u4f9d\u5b58\u6027",
+      "meaning": " dependency",
+      "hiragana": "\u3044\u305e\u3093\u305b\u3044"
+    },
+    {
+      "kanji": "\u81a8\u5f35",
+      "meaning": " expansion",
+      "hiragana": "\u307c\u3046\u3061\u3087\u3046"
+    },
+    {
+      "kanji": "\u53ce\u7e2e",
+      "meaning": " shrinkage",
+      "hiragana": "\u3057\u3085\u3046\u3057\u3085\u304f"
+    },
+    {
+      "kanji": "\u53b3\u5bc6\u306b",
+      "meaning": " strictly",
+      "hiragana": "\u3052\u3093\u307f\u3064\u306b"
+    },
+    {
+      "kanji": "\u6c17\u4f53",
+      "meaning": " gas",
+      "hiragana": "\u304d\u305f\u3044"
+    },
+    {
+      "kanji": "\u5727\u529b",
+      "meaning": " pressure",
+      "hiragana": "\u3042\u3064\u308a\u3087\u304f"
+    },
+    {
+      "kanji": "\u9006\u6bd4\u4f8b",
+      "meaning": " inverse proportion",
+      "hiragana": "\u304e\u3083\u304f\u3072\u308c\u3044"
+    },
+    {
+      "kanji": "\u30dc\u30a4\u30eb\u306e\u6cd5\u5247",
+      "meaning": " Boyle\u2019s law",
+      "hiragana": "\u307c\u3044\u308b\u306e\u307b\u3046\u305d\u304f"
+    },
+    {
+      "kanji": "\u5bc6\u5ea6",
+      "meaning": " density",
+      "hiragana": "\u307f\u3064\u3069"
+    },
+    {
+      "kanji": "\u7406\u60f3\u6c17\u4f53",
+      "meaning": " ideal gas",
+      "hiragana": "\u308a\u305d\u3046\u304d\u305f\u3044"
+    },
+    {
+      "kanji": "\u5b9f\u5728\u6c17\u4f53",
+      "meaning": " real gas",
+      "hiragana": "\u3058\u3064\u3056\u3044\u304d\u305f\u3044"
+    },
+    {
+      "kanji": "\u6bd4\u4f8b\u5b9a\u6570",
+      "meaning": " proportionality constant",
+      "hiragana": "\u3072\u308c\u3044\u3066\u3044\u3059\u3046"
+    },
+    {
+      "kanji": "\u6c17\u4f53\u5b9a\u6570",
+      "meaning": " gas constant",
+      "hiragana": "\u304d\u305f\u3044\u3066\u3044\u3059\u3046"
+    },
+    {
+      "kanji": "\u7d76\u5bfe\u6e29\u5ea6",
+      "meaning": " absolute temperature",
+      "hiragana": "\u305c\u3063\u305f\u3044\u304a\u3093\u3069"
+    }
+  ],
+  "\u00a75.2 ": [
+    {
+      "kanji": "\u72b6\u614b\u65b9\u7a0b\u5f0f",
+      "meaning": " equation of state",
+      "hiragana": "\u3058\u3087\u3046\u305f\u3044\u307b\u3046\u3066\u3044\u3057\u304d"
+    },
+    {
+      "kanji": "\u4f53\u7cfb",
+      "meaning": " system",
+      "hiragana": "\u305f\u3044\u3051\u3044"
+    },
+    {
+      "kanji": "\u7b49\u65b9\u7684",
+      "meaning": " isotropic",
+      "hiragana": "\u3068\u3046\u307b\u3046\u3066\u304d"
+    },
+    {
+      "kanji": "\u71b1\u5e73\u8861",
+      "meaning": " thermal equilibrium",
+      "hiragana": "\u306d\u3064\u3078\u3044\u3053\u3046"
+    },
+    {
+      "kanji": "\u7570\u65b9\u6027",
+      "meaning": " anisotropy",
+      "hiragana": "\u3044\u307b\u3046\u305b\u3044"
+    },
+    {
+      "kanji": "\u5fdc\u529b",
+      "meaning": " stress",
+      "hiragana": "\u304a\u3046\u308a\u3087\u304f"
+    },
+    {
+      "kanji": "\u72b6\u614b",
+      "meaning": " state",
+      "hiragana": "\u3058\u3087\u3046\u305f\u3044"
+    },
+    {
+      "kanji": "\u5727\u529b",
+      "meaning": " pressure",
+      "hiragana": "\u3042\u3064\u308a\u3087\u304f"
+    },
+    {
+      "kanji": "\u6e29\u5ea6",
+      "meaning": " temperature",
+      "hiragana": "\u304a\u3093\u3069"
+    },
+    {
+      "kanji": "\u4f53\u7a4d",
+      "meaning": " volume",
+      "hiragana": "\u305f\u3044\u305b\u304d"
+    },
+    {
+      "kanji": "\u72b6\u614b\u91cf",
+      "meaning": " state quantity",
+      "hiragana": "\u3058\u3087\u3046\u305f\u3044\u308a\u3087\u3046"
+    },
+    {
+      "kanji": "\u72b6\u614b\u5909\u6570",
+      "meaning": " state variable",
+      "hiragana": "\u3058\u3087\u3046\u305f\u3044\u3078\u3093\u3059\u3046"
+    },
+    {
+      "kanji": "\u504f\u5fae\u5206",
+      "meaning": " partial differentiation",
+      "hiragana": "\u3078\u3093\u3073\u3076\u3093"
+    },
+    {
+      "kanji": "\u4fc2\u6570",
+      "meaning": " coefficient",
+      "hiragana": "\u3051\u3044\u3059\u3046"
+    },
+    {
+      "kanji": "\u5909\u6570",
+      "meaning": " variable",
+      "hiragana": "\u3078\u3093\u3059\u3046"
+    },
+    {
+      "kanji": "\u95a2\u6570",
+      "meaning": " function",
+      "hiragana": "\u304b\u3093\u3059\u3046"
+    },
+    {
+      "kanji": "\u5b9a\u6570",
+      "meaning": " constant",
+      "hiragana": "\u3066\u3044\u3059\u3046"
+    },
+    {
+      "kanji": "\u5272\u5408",
+      "meaning": " ratio",
+      "hiragana": "\u308f\u308a\u3042\u3044"
+    },
+    {
+      "kanji": "\u7b49\u6e29\u5727\u7e2e\u7387",
+      "meaning": " compressibility at constant temperature",
+      "hiragana": "\u3068\u3046\u304a\u3093\u3042\u3063\u3057\u3085\u304f\u308a\u3064"
+    },
+    {
+      "kanji": "\u4f53\u81a8\u5f35\u7387",
+      "meaning": " coefficient of cubical expansion",
+      "hiragana": "\u305f\u3044\u307c\u3046\u3061\u3087\u3046\u308a\u3064"
+    },
+    {
+      "kanji": "\u6761\u4ef6",
+      "meaning": " condition",
+      "hiragana": "\u3058\u3087\u3046\u3051\u3093"
+    },
+    {
+      "kanji": "\u4f53\u7a4d\u5f3e\u6027\u7387",
+      "meaning": " bulk modulus",
+      "hiragana": "\u305f\u3044\u305b\u304d\u3060\u3093\u305b\u3044\u308a\u3064"
+    },
+    {
+      "kanji": "\u7406\u60f3\u6c17\u4f53",
+      "meaning": " ideal gas",
+      "hiragana": "\u308a\u305d\u3046\u304d\u305f\u3044"
+    },
+    {
+      "kanji": "\u6c17\u5727",
+      "meaning": " atmospheric pressure",
+      "hiragana": "\u304d\u3042\u3064"
+    }
+  ],
+  "\u00a75.3": [
+    {
+      "kanji": "\u6e96\u9759\u7684\u904e\u7a0b",
+      "meaning": " quasi-static process",
+      "hiragana": "\u3058\u3085\u3093\u305b\u3044\u3066\u304d\u304b\u3066\u3044"
+    },
+    {
+      "kanji": "\u91cd\u529b\u5834",
+      "meaning": " gravitational field",
+      "hiragana": "\u3058\u3085\u3046\u308a\u3087\u304f\u3070"
+    },
+    {
+      "kanji": "\u6975\u9650",
+      "meaning": " limit",
+      "hiragana": "\u304d\u3087\u304f\u3052\u3093"
+    },
+    {
+      "kanji": "\u7121\u9650",
+      "meaning": " infinity",
+      "hiragana": "\u3080\u3052\u3093"
+    },
+    {
+      "kanji": "\u5727\u7e2e",
+      "meaning": " compression",
+      "hiragana": "\u3042\u3063\u3057\u3085\u304f"
+    },
+    {
+      "kanji": "\u52a0\u71b1",
+      "meaning": " heating",
+      "hiragana": "\u304b\u306d\u3064"
+    },
+    {
+      "kanji": "\u5bfe\u6d41",
+      "meaning": " convection",
+      "hiragana": "\u305f\u3044\u308a\u3085\u3046"
+    },
+    {
+      "kanji": "\u81a8\u5f35",
+      "meaning": " expansion",
+      "hiragana": "\u307c\u3046\u3061\u3087\u3046"
+    },
+    {
+      "kanji": "\u51b7\u5374",
+      "meaning": " cooling",
+      "hiragana": "\u308c\u3044\u304d\u3083\u304f"
+    },
+    {
+      "kanji": "\u5e73\u8861\u72b6\u614b",
+      "meaning": " state of equilibrium",
+      "hiragana": "\u3078\u3044\u3053\u3046\u3058\u3087\u3046\u305f\u3044"
+    },
+    {
+      "kanji": "\u5bc6\u5c01\u3059\u308b",
+      "meaning": " seal up",
+      "hiragana": "\u307f\u3063\u3077\u3046\u3059\u308b"
+    },
+    {
+      "kanji": "\u65ad\u9762\u7a4d",
+      "meaning": " sectional area, cross section",
+      "hiragana": "\u3060\u3093\u3081\u3093\u305b\u304d"
+    },
+    {
+      "kanji": "\u7406\u60f3\u6c17\u4f53",
+      "meaning": " ideal gas",
+      "hiragana": "\u308a\u305d\u3046\u304d\u305f\u3044"
+    },
+    {
+      "kanji": "\u7b49\u6e29\u5727\u7e2e",
+      "meaning": " isothermal compression",
+      "hiragana": "\u3068\u3046\u304a\u3093\u3042\u3063\u3057\u3085\u304f"
+    },
+    {
+      "kanji": "\u900f\u71b1\u58c1",
+      "meaning": " diathermal wall",
+      "hiragana": "\u3068\u3046\u306d\u3064\u3078\u304d"
+    },
+    {
+      "kanji": "\u71b1\u6e90",
+      "meaning": " heat reservoir",
+      "hiragana": "\u306d\u3064\u3052\u3093"
+    },
+    {
+      "kanji": "\u71b1\u5bb9\u91cf",
+      "meaning": " heat capacity",
+      "hiragana": "\u306d\u3064\u3088\u3046\u308a\u3087\u3046"
+    },
+    {
+      "kanji": "\u71b1\u6d74",
+      "meaning": " heat reservoir",
+      "hiragana": "\u306d\u3064\u3088\u304f"
+    }
+  ],
+  "\u00a75.4": [
+    {
+      "kanji": "\u71b1\u529b\u5b66\u306e\u7b2c\uff11\u6cd5\u5247",
+      "meaning": " first law of thermodynamics",
+      "hiragana": "\u306d\u3064\u308a\u304d\u304c\u304f\u306e\u3060\u3044\uff11\u307b\u3046\u305d\u304f"
+    },
+    {
+      "kanji": "\u4fdd\u5b58\u529b",
+      "meaning": " conservative force",
+      "hiragana": "\u307b\u305e\u3093\u308a\u3087\u304f"
+    },
+    {
+      "kanji": "\u529b\u5b66\u7684\u30a8\u30cd\u30eb\u30ae\u30fc",
+      "meaning": " mechanical energy",
+      "hiragana": "\u308a\u304d\u304c\u304f\u3066\u304d\u3048\u306d\u308b\u304e\u30fc"
+    },
+    {
+      "kanji": "\u6469\u64e6",
+      "meaning": " friction",
+      "hiragana": "\u307e\u3055\u3064"
+    },
+    {
+      "kanji": "\u62b5\u6297",
+      "meaning": " resistor, resistance",
+      "hiragana": "\u3066\u3044\u3053\u3046"
+    },
+    { "kanji": "\u71b1", "meaning": " heat", "hiragana": "\u306d\u3064" },
+    {
+      "kanji": "\u5f62\u614b",
+      "meaning": " form",
+      "hiragana": "\u3051\u3044\u305f\u3044"
+    },
+    {
+      "kanji": "\u964d\u4e0b",
+      "meaning": " drop",
+      "hiragana": "\u3053\u3046\u304b"
+    },
+    {
+      "kanji": "\u7fbd\u6839\u8eca",
+      "meaning": " vaned/bladed wheel",
+      "hiragana": "\u306f\u306d\u3050\u308b\u307e"
+    },
+    {
+      "kanji": "\u5de8\u8996\u7684\u904b\u52d5",
+      "meaning": " comprehensive movement",
+      "hiragana": "\u304d\u3087\u3057\u3066\u304d\u3046\u3093\u3069\u3046"
+    },
+    {
+      "kanji": "\u71b1\u91cf",
+      "meaning": " heating value, quantity of heat",
+      "hiragana": "\u306d\u3064\u308a\u3087\u3046"
+    },
+    {
+      "kanji": "\u71b1\u306e\u4ed5\u4e8b\u5f53\u91cf",
+      "meaning": " mechanical equivalence of heat",
+      "hiragana": "\u306d\u3064\u306e\u3057\u3054\u3068\u3068\u3046\u308a\u3087\u3046"
+    },
+    {
+      "kanji": "\u5727\u7e2e\u3059\u308b",
+      "meaning": " compress",
+      "hiragana": "\u3042\u3063\u3057\u3085\u304f\u3059\u308b"
+    },
+    {
+      "kanji": "\u6e96\u9759\u7684\u904e\u7a0b",
+      "meaning": " quasi-static process",
+      "hiragana": "\u3058\u3085\u3093\u305b\u3044\u3066\u304d\u304b\u3066\u3044"
+    },
+    {
+      "kanji": "\u4f53\u7a4d",
+      "meaning": " volume",
+      "hiragana": "\u305f\u3044\u305b\u304d"
+    },
+    {
+      "kanji": "\u72b6\u614b\u91cf",
+      "meaning": " state quantity",
+      "hiragana": "\u3058\u3087\u3046\u305f\u3044\u308a\u3087\u3046"
+    },
+    {
+      "kanji": "\u9280\u884c",
+      "meaning": " bank",
+      "hiragana": "\u304e\u3093\u3053\u3046"
+    },
+    {
+      "kanji": "\u9810\u91d1",
+      "meaning": " savings",
+      "hiragana": "\u3061\u3087\u304d\u3093\uff0c\u3088\u304d\u3093"
+    },
+    {
+      "kanji": "\u52a0\u71b1",
+      "meaning": " heating",
+      "hiragana": "\u304b\u306d\u3064"
+    },
+    {
+      "kanji": "\u51b7\u5374",
+      "meaning": " cooling",
+      "hiragana": "\u308c\u3044\u304d\u3083\u304f"
+    },
+    {
+      "kanji": "\u5e73\u8861\u7cfb",
+      "meaning": " system of equilibrium",
+      "hiragana": "\u3078\u3044\u3053\u3046\u3051\u3044"
+    },
+    {
+      "kanji": "\u5185\u90e8\u30a8\u30cd\u30eb\u30ae\u30fc",
+      "meaning": " internal energy",
+      "hiragana": "\u306a\u3044\u3076\u3048\u306d\u308b\u304e\u30fc"
+    },
+    {
+      "kanji": "\u30a8\u30cd\u30eb\u30ae\u30fc\u4fdd\u5b58\u306e\u6cd5\u5247",
+      "meaning": " law of energy conservation, energy conservation law",
+      "hiragana": "\u3048\u306d\u308b\u304e\u30fc\u307b\u305e\u3093\u306e\u307b\u3046\u305d\u304f"
+    },
+    {
+      "kanji": "\u6709\u9650\u306e",
+      "meaning": " limited",
+      "hiragana": "\u3086\u3046\u3052\u3093\u306e"
+    },
+    {
+      "kanji": "\u65ad\u71b1\u81ea\u7531\u81a8\u5f35",
+      "meaning": " adiabatic free expansion",
+      "hiragana": "\u3060\u3093\u306d\u3064\u3058\u3086\u3046\u307c\u3046\u3061\u3087\u3046"
+    },
+    {
+      "kanji": "\u5668",
+      "meaning": " container",
+      "hiragana": "\u3046\u3064\u308f"
+    },
+    {
+      "kanji": "\u65ad\u71b1\u6750",
+      "meaning": " heat insulator",
+      "hiragana": "\u3060\u3093\u306d\u3064\u3056\u3044"
+    },
+    {
+      "kanji": "\u691c\u51fa",
+      "meaning": " detection",
+      "hiragana": "\u3051\u3093\u3057\u3085\u3064"
+    },
+    {
+      "kanji": "\u65ad\u71b1\u58c1",
+      "meaning": " insulator wall, adiabatic wall",
+      "hiragana": "\u3060\u3093\u306d\u3064\u3078\u304d"
+    },
+    {
+      "kanji": "\u7d30\u5b54",
+      "meaning": " minute hole, pore",
+      "hiragana": "\u3055\u3044\u3053\u3046"
+    },
+    {
+      "kanji": "\u9694\u58c1",
+      "meaning": " partition",
+      "hiragana": "\u304b\u304f\u3078\u304d"
+    },
+    {
+      "kanji": "\u5bc6\u5ea6",
+      "meaning": " density",
+      "hiragana": "\u307f\u3064\u3069"
+    },
+    {
+      "kanji": "\u7279\u8cea",
+      "meaning": " specific character",
+      "hiragana": "\u3068\u304f\u3057\u3064"
+    }
+  ],
+  "\u00a75.5": [
+    {
+      "kanji": "\u71b1\u5bb9\u91cf",
+      "meaning": " heat capacity",
+      "hiragana": "\u306d\u3064\u3088\u3046\u308a\u3087\u3046"
+    },
+    {
+      "kanji": "\u6bd4\u71b1",
+      "meaning": " specific heat",
+      "hiragana": "\u3072\u306d\u3064"
+    },
+    {
+      "kanji": "\u5b9a\u7a4d\u71b1\u5bb9\u91cf",
+      "meaning": " heat capacity at constant volume",
+      "hiragana": "\u3066\u3044\u305b\u304d\u306d\u3064\u3088\u3046\u308a\u3087\u3046"
+    },
+    {
+      "kanji": "\u5b9a\u5727\u71b1\u5bb9\u91cf",
+      "meaning": " heat capacity at constant pressure",
+      "hiragana": "\u3066\u3044\u3042\u3064\u306d\u3064\u3088\u3046\u308a\u3087\u3046"
+    },
+    {
+      "kanji": "\u5185\u90e8\u30a8\u30cd\u30eb\u30ae\u30fc",
+      "meaning": " internal energy",
+      "hiragana": "\u306a\u3044\u3076\u3048\u306d\u308b\u304e\u30fc"
+    },
+    { "kanji": "\u6bd4", "meaning": " ratio", "hiragana": "\u3072" },
+    {
+      "kanji": "\u72ec\u7acb",
+      "meaning": " independence",
+      "hiragana": "\u3069\u304f\u308a\u3064"
+    },
+    {
+      "kanji": "\u7d76\u5bfe\u6e29\u5ea6",
+      "meaning": " absolute temperature",
+      "hiragana": "\u305c\u3063\u305f\u3044\u304a\u3093\u3069"
+    }
+  ]
+}
