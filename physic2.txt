@@ -1,0 +1,291 @@
+熱量    ねつりょう     heating value, quantity of heat
+比熱    ひねつ     specific heat
+状態方程式    じょうたいほうていしき     equation of state
+準静的    じゅんせいてき     quasi-static
+体積    たいせき     volume
+等温膨張    とうおんぼうちょう     isothermal expansion
+金属魂    きんぞくこん     metal ingot
+密度    みつど     density
+等温体積弾性率    とうおんたいせきだんせいりつ     isothermal bulk modulus
+圧力    あつりょく     pressure
+断熱的    だんねつてき     adiabatic
+圧縮する    あっしゅくする     compress
+密封する    みっぷうする     seal up
+透熱    とうねつ     pervious heat
+理想気体    りそうきたい     ideal gas
+定圧比熱    ていあつひねつ     specific heat at constant pressure
+等温変化    とうおんへんか     isothermal change
+内部エネルギー    ないぶえねるぎー     internal energy
+エントロピー    えんとろぴー     entropy
+体積膨張    たいせきぼうちょう     volume expansion
+液体    えきたい     liquid
+液面    えきめん     liquid level
+臨界体積    りんかいたいせき     critical volume
+水素分子    すいそぶんし     hydrogen molecule
+原子量    げんしりょう     atomic weight
+結晶格子    けっしょうこうし     crystal lattice
+原子間隔    げんしかんかく     interatomic interval
+衣類    いるい     clothing
+製品    せいひん     product
+摩擦    まさつ     friction
+帯電    たいでん     electrification
+電気    でんき     electricity
+異種    いしゅ     different kind
+絶縁体    ぜつえんたい     insulator
+同種の    どうしゅの     the same kind
+反発する    はんぱつする     repel
+定量的に    ていりょうてきに     quantitatively
+理想的に    りそうてきに     ideally
+無視する    むしする     ignore, disregard, neglect
+点電荷    てんでんか     point charge
+逆比例    ぎゃくひれい     inverse proportion
+電気量（電荷）    でんきりょう（でんか）     quantity of electricity (electric charge)
+比例    ひれい     proportion
+見出す    みいだす     find, discover
+比例係数    ひれいけいすう     proportional coefficient
+単位系    たんいけい     unit system
+有理単位系    ゆうりたんいけい     rational system of units
+距離    きょり     distance
+真空    しんくう     vacuum, void
+誘電率    ゆうでんりつ     dielectric constant, permittivity
+速さ    はやさ     speed
+現れる    あらわれる     appear
+値    あたい     value
+記す    しるす     write
+定義する    ていぎする     define
+孤立させる    こりつさせる     isolate
+線    せん     line
+面    めん     plane
+空間    くうかん     space
+分布する    ぶんぷする     be distributed
+微小部分    びしょうぶぶん     minute part
+分割する    ぶんかつする     divide, split, segment
+適用する    てきようする     apply
+得る    える     get, acquire, obtain
+合成    ごうせい     composition
+帯電体    たいでんたい     electrified body
+別の    べつの     another
+相互の    そうごの     mutual
+静電気力    せいでんきりょく     electrostatic force
+反作用    はんさよう     reaction
+電荷分布    でんかぶんぷ     charge distribution
+広がり    ひろがり     expanse, spread,
+帯電状態    たいでんじょうたい     state of electrification
+測る    はかる     measure
+複雑な    ふくざつな     complex, complicated
+力の合成    ちからのごうせい     composition of forces
+場所    ばしょ     place
+位置    いち     position
+関数    かんすう     function
+成分    せいぶん     component
+直接に    ちょくせつに     directly
+周りの空間    まわりのくうかん     surrounding space
+緊張状態    きんちょうじょうたい     state of tension, tense state
+応力    おうりょく     stress
+弾性体    だんせいたい     elastic body
+内部    ないぶ     inside
+状態    じょうたい     state
+電場    でんば     electric field
+電界    でんかい     electric field
+電場の強さ    でんばのつよさ     electric field strength
+一見    まわりくどい     at first sight, at a glance circuitous, roundabout, circular
+最初に    さいしょに    (at) first, to begin/start with
+導入する    どうにゅうする     introduce, import, innovate
+実在性    じつざいせい     substantiality
+電波    でんぱ     radio wave
+存在    そんざい     existence
+流速    りゅうそく     speed of a moving fluid
+流線    りゅうせん     stream line
+接線    せっせん     tangential line
+電気力線    でんきりきせん     line of electric force
+湧き出す    わきだす     spring
+ガウスの法則    ガウスのほうそく     Gauss’s law
+静電場    せいでんば     electrostatic field
+定常流    ていじょうりゅう     stationary flow
+対応する    たいおうする     correspond
+緊密な    きんみつな     close
+周縁    しゅうえん     surrounding edge
+錐面    すいめん     conical surface, cone
+球    きゅう     sphere, ball, globe
+面積    めんせき     area
+立体角    りったいかく     solid angle
+切口    きりくち     cut
+断面積    だんめんせき     cross section
+量    りょう     quantity
+積分    せきぶん     integral
+単位球    たんいきゅう     unit sphere
+表面積    ひょうめんせき     surface area
+相殺する    そうさいする     offset, balance, cancel
+結局    けっきょく     finally, eventually, ultimately
+議論    ぎろん     argument
+仮定する    かていする     suppose, assume
+符号    ふごう     sign, symbol
+勝手な    かってな     optional, random
+法線    ほうせん     normal
+代数和    だいすうわ     algebraic sum
+内容    ないよう     content
+散在する    さんざいする     scatter, sprinkle, straggle
+連続的に    れんぞくてきに     continuously
+対称性    たいしょうせい     symmetry
+側面    そくめん     side, flank,lateral
+流管    りゅうかん     fluid tube
+電気力管    でんきりきかん     tube of electric force
+電位    でんい     electric potential
+保存力    ほぞんりょく     conservative force
+力学    りきがく     dynamics, mechanics
+微分    びぶん     differential
+万有引力    ばんゆういんりょく     universal gravitation
+任意に    にんいに     optionally
+配置する    はいちする     arrange, place, allocate
+合成する    ごうせいする     compound
+静電ポテンシャル    せいでんポテンシャル     electrostatic potential
+スカラー積    スカラーせき     scalar product
+両端    りょうたん     both ends
+単位正電荷    たんいせいでんか     unit positive charge
+経路    けいろ     route
+仕事    しごと     work
+保持する    ほじする     hold, save, retain
+要する（必要とする）    ようする（ひつようとする）     need, demand
+環状の    かんじょうの     annular, ringed
+導線    どうせん     conductor wire
+発電機    はつでんき     dynamo, generator
+等電位面    とうでんいめん     equipotential surface
+電場ベクトル    でんばベクトル     electric field vector
+垂直    すいちょく     perpendicular, vertical
+諸関係    しょかんけい     various relations
+付加定数    ふかていすう     additional constant
+理論的な    りろんてきな     theoretical
+通常    つうじょう     usually
+無限遠点    むげんえんてん     infinite distant point
+実際の    じっさいの     real, actual
+応用    おうよう     application
+地球    ちきゅう     Earth
+導体    どうたい     conductor
+等電位領域    とうでんいりょういき     equipotential region
+金属    きんぞく     metal
+電解質    でんかいしつ     electrolyte
+溶液    ようえき     solution
+物質    ぶっしつ     substance
+正電気    せいでんき     positive charge
+負電気    ふでんき     negative charge
+粒子    りゅうし     particle, grain
+伝導電子    でんどうでんし     conduction electron
+担い手    にないて     carrier
+担体    たんたい     carrier
+帯電させる    たいでんさせる     electrify, charge
+静電誘導    せいでんゆうどう     electrostatic induction
+速やかに    すみやかに     speedily, soon
+等量    とうりょう     same quantity
+厚さ    あつさ     thickness
+薄い    うすい     thin
+平行    へいこう     parallel, parallelism
+外部    がいぶ     outside
+表面    ひょうめん     surface
+電荷密度    でんかみつど     charge density
+回転対称性    かいてんたいしょうせい     rotational symmetry
+正電荷層    せいでんかそう     layer of positive charge
+無限に小さい    むげんにちいさい     infinitesimal
+表面電荷    ひょうめんでんか     surface charge
+面密度    めんみつど     areal density
+有限の    ゆうげんの     limited, finite
+極限    きょくげん     limit, limitation
+電気双極子    でんきそうきょくし     electric dipole
+双極子モーメント    そうきょくしモーメント     dipole moment
+静電容量    せいでんようりょう     electrostatic capacity
+キャパシター    キャパシター     capacitor
+出現する    しゅつげんする     appear
+電気量保存の法則    でんきりょうほぞんのほうそく     conservation law of electric charge
+接地    せっち     ground, earth
+逃れる    のがれる     escape
+帯電導体    たいでんどうたい     electrified conductor
+電荷    でんか     electric charge
+蓄える    たくわえる     save, store, stock
+立場    たちば     position, situation, place
+困難な    こんなんな     difficult
+多大な    ただいな     great
+要する    ようする     need, demand, require
+電気容量    でんきようりょう     electric capacity
+実用    じつよう     practical use
+著しく    いちじるしく     remarkably, markedly,
+表面電荷密度    ひょうめんでんかみつど     surface charge density
+局在する    きょくざいする     localize
+顕著な    けんちょな     remarkable, outstanding, marked
+蓄電器    ちくでんき     condenser, capacitor
+接近する    せっきんする     approach
+対置    たいち     contraposition
+極板    きょくばん     pole plate
+間隔    かんかく     interval, distance, separation
+除く    のぞく     remove, eliminate
+一様な    いちような     uniform
+電位差    でんいさ     electric potential difference
+便利な    べんりな     convenient, useful, functional
+存在する    そんざいする     exist
+絶対値    ぜったいち     absolute value
+関係式    かんけいしき     relational expression
+側壁    そくへき     sidewall
+電気回路    でんきかいろ     electric circuit
+（電）極    （でん）きょく     electrode
+並列接続    へいれつせつぞく     parallel connection
+直列接続    ちょくれつせつぞく     cascade connection, series connection
+誘電分極    ゆうでんぶんきょく     dielectric polarization
+原子核    げんしかく     atomic nucleus
+電子    でんし     electron
+束縛する    そくばくする     restrain, bind
+固体    こたい     solid
+電流    でんりゅう     electric current
+分子    ぶんし     molecule
+無極性分子    むきょくせいぶんし     non-polar molecule
+結合    けつごう     bond
+分極    ぶんきょく     polarization
+偏在    へんざい     uneven distribution
+有極性分子    ゆうきょくせいぶんし     polar molecule
+規則正しい    きそくただしい     regular
+構造    こうぞう     structure
+反応    はんのう     reaction
+巨視的な    きょしてきな     macroscopic
+誘電体    ゆうでんたい     dielectrics
+分極電荷    ぶんきょくでんか     polarized charge
+磁石    じしゃく     magnet
+度合    どあい     degree
+付与する    ふよする     invest
+電気分極    でんきぶんきょく     electric polarization
+分極ベクトル    ぶんきょくベクトル     polarization vector
+真電荷    しんでんか     true charge
+等方性物質    とうほうせいぶっしつ     isotropic substance
+電気感受率    でんきかんじゅりつ     electric susceptibility
+比誘電率    ひゆうでんりつ     relative dielectric constant
+電束密度    でんそくみつど     electric flux density
+仮想電場    かそうでんば     imaginary electric field
+自発分極    じはつぶんきょく     spontaneous polarization
+容量    ようりょう     capacity
+充電する    じゅうでんする     charge
+静電エネルギー    せいでんエネルギー     electrostatic energy
+放電    ほうでん     electric discharge
+不思議な    ふしぎな     strange, mysterious, marvelous
+特殊な    とくしゅな     special, particular
+証明する    しょうめいする     prove
+半径    はんけい     radius
+磁場    じば     magnetic field
+定常電流    ていじょうでんりゅう     stationary electric current
+熱作用    ねつさよう     thermal action
+磁気作用    じきさよう     magnetic action
+扱う    あつかう     deal with, treat
+オームの法則    オームのほうそく     Ohm’s law
+電圧    でんあつ     voltage
+確認する    かくにんする     confirm, verify
+キルヒホッフの法則    キルヒホッフのほうそく     Kirchhoff’s law
+理解    りかい     understanding, perception, grasp
+広める    ひろめる     diffuse, disperse
+磁気    じき     magnetism
+帰着する    きちゃくする     return, result
+磁荷    じか     magnetic charge
+出発する    しゅっぱつする     start, begin
+静電気    せいでんき     static electricity
+順序    じゅんじょ     order, procedure, gradation
+知識    ちしき     knowledge, information, wisdom
+整理する    せいりする     tidy, order, straighten
+混乱する    こんらんする     confuse, disturb
+面倒な    めんどうな     troublesome, inconvenient
+単位    たんい     unit
+導く    みちびく     guide, teach, enlighten, lead
+役立つ    やくだつ     help, serve, go far, contribute

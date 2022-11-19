@@ -1,0 +1,199 @@
+温度    おんど     temperature
+定量化    ていりょうか     quantification
+概念    がいねん     concept
+放置する    ほうちする     leave
+一様な    いちような     uniform
+接触    せっしょく     contact
+冷温    れいおん     cold and warm
+度合い    どあい     degree
+熱平衡    ねつへいこう     thermal equilibrium
+合理的    ごうりてき     rational
+数値    すうち     numerical value
+体積    たいせき     volume
+電気抵抗    でんきていこう     electric resistance
+温度計    おんどけい     thermometer
+目盛り    めもり     divisions, scale
+セルシウス度    せるしうすど     Celsius degree
+摂氏    せっし     centigrade
+気圧    きあつ     atmospheric pressure
+平衡    へいこう     equilibrium
+共存    きょうぞん     coexistence
+沸騰する    ふっとうする     boil
+外挿    がいそう     extrapolation
+依存性    いぞんせい     dependency
+膨張    ぼうちょう     expansion
+収縮    しゅうしゅく     shrinkage
+厳密に    げんみつに     strictly
+気体    きたい     gas
+圧力    あつりょく     pressure
+逆比例    ぎゃくひれい     inverse proportion
+ボイルの法則    ぼいるのほうそく     Boyle’s law
+密度    みつど     density
+理想気体    りそうきたい     ideal gas
+実在気体    じつざいきたい     real gas
+比例定数    ひれいていすう     proportionality constant
+気体定数    きたいていすう     gas constant
+絶対温度    ぜったいおんど     absolute temperature
+状態方程式    じょうたいほうていしき     equation of state
+体系    たいけい     system
+等方的    とうほうてき     isotropic
+異方性    いほうせい     anisotropy
+応力    おうりょく     stress
+状態    じょうたい     state
+状態量    じょうたいりょう     state quantity
+状態変数    じょうたいへんすう     state variable
+偏微分    へんびぶん     partial differentiation
+係数    けいすう     coefficient
+変数    へんすう     variable
+関数    かんすう     function
+定数    ていすう     constant
+割合    わりあい     ratio
+等温圧縮率    とうおんあっしゅくりつ     compressibility at constant temperature
+体膨張率    たいぼうちょうりつ     coefficient of cubical expansion
+条件    じょうけん     condition
+体積弾性率    たいせきだんせいりつ     bulk modulus
+準静的過程    じゅんせいてきかてい     quasi-static process
+重力場    じゅうりょくば     gravitational field
+極限    きょくげん     limit
+無限    むげん     infinity
+圧縮    あっしゅく     compression
+加熱    かねつ     heating
+対流    たいりゅう     convection
+冷却    れいきゃく     cooling
+平衡状態    へいこうじょうたい     state of equilibrium
+密封する    みっぷうする     seal up
+断面積    だんめんせき     sectional area, cross section
+等温圧縮    とうおんあっしゅく     isothermal compression
+透熱壁    とうねつへき     diathermal wall
+熱源    ねつげん     heat reservoir
+熱容量    ねつようりょう     heat capacity
+熱浴    ねつよく     heat reservoir
+熱力学の第１法則    ねつりきがくのだい１ほうそく     first law of thermodynamics
+保存力    ほぞんりょく     conservative force
+力学的エネルギー    りきがくてきえねるぎー     mechanical energy
+摩擦    まさつ     friction
+抵抗    ていこう     resistor, resistance
+熱    ねつ     heat
+形態    けいたい     form
+降下    こうか     drop
+羽根車    はねぐるま     vaned/bladed wheel
+巨視的運動    きょしてきうんどう     comprehensive movement
+熱量    ねつりょう     heating value, quantity of heat
+熱の仕事当量    ねつのしごととうりょう     mechanical equivalence of heat
+圧縮する    あっしゅくする     compress
+銀行    ぎんこう     bank
+預金    ちょきん，よきん     savings
+平衡系    へいこうけい     system of equilibrium
+内部エネルギー    ないぶえねるぎー     internal energy
+エネルギー保存の法則    えねるぎーほぞんのほうそく     law of energy conservation, energy conservation law
+有限の    ゆうげんの     limited
+断熱自由膨張    だんねつじゆうぼうちょう     adiabatic free expansion
+器    うつわ     container
+断熱材    だんねつざい     heat insulator
+検出    けんしゅつ     detection
+断熱壁    だんねつへき     insulator wall, adiabatic wall
+細孔    さいこう     minute hole, pore
+隔壁    かくへき     partition
+特質    とくしつ     specific character
+比熱    ひねつ     specific heat
+定積熱容量    ていせきねつようりょう     heat capacity at constant volume
+定圧熱容量    ていあつねつようりょう     heat capacity at constant pressure
+比    ひ     ratio
+独立    どくりつ     independence
+断熱変化    だんねつへんか     adiabatic change
+等温変化    とうおんへんか     isothermal change
+等温膨張    とうおんぼうちょう     isothermal expansion
+断熱圧縮    だんねつあっしゅく     adiabatic compression
+断熱膨張    だんねつぼうちょう     adiabatic expansion
+水素    すいそ     hydrogen
+窒素    ちっそ     nitrogen
+酸素    さんそ     oxygen
+一酸化炭素    いっさんかたんそ     carbon monoxide
+水蒸気    すいじょうき     water vapor
+炭酸ガス    たんさんがす     carbon dioxide gas
+双曲線    そうきょくせん     hyperbola
+準静的変化    じゅんせいてきへんか     quasi-static process
+熱機関    ねつきかん     heat engine
+供給する    きょうきゅうする     supply
+効率    こうりつ     efficiency
+冷凍機    れいとうき     refrigerator
+閉曲線    へいきょくせん     closed curve
+面積    めんせき     area
+熱力学の第２法則    ねつりきがくのだい２ほうそく     second law of thermodynamics
+逆サイクル    ぎゃくさいくる     reverse cycle
+無駄    むだ     uselessness
+冷房    れいぼう     air conditioning
+エネルギー保存則    えねるぎーほぞんそく     law of conservation of energy
+矛盾    むじゅん     contradiction
+冷房装置    れいぼうそうち     air conditioner
+電力    でんりょく     electric power
+浪費    ろうひ     waste
+第２種の永久機関    だい２しゅのえいきゅうきかん     perpetual motion of the second kind
+帰納的    きのうてき     inductively
+推測    すいそく     reasoning
+議論    ぎろん     argument
+トムソンの原理    とむそんのげんり     Thomson’s principle
+等量    とうりょう     same quantity
+不可能    ふかのう     impossibility
+航海    こうかい     navigation
+燃料    ねんりょう     fuel
+クラウジウスの原理    くらうじうすのげんり     Clausius’s principle
+過程    かてい     process
+実現    じつげん     realization
+等価    とうか     equal value
+深長    しんちょう     deep, profund
+不可逆現象    ふかぎゃくげんしょう     irreversible phenomenon
+電熱器    でんねつき     electric range
+可逆    かぎゃく     reversibility
+自由膨張    じゆうぼうちょう     free expansion
+授受    じゅじゅ     give and receive
+有限な    ゆうげんな     limited
+熱力学的温度目盛    ねつりきがくてきおんどめもり     thermodynamic scale of temperature
+実在    じつざい     real existence
+準静的    じゅんせいてき     quasi-static
+連結    れんけつ     connection
+不等号    ふとうごう     sign of inequality
+可逆熱機関    かぎゃくねつきかん     reversible heat engine
+可逆機関    かぎゃくきかん     reversible engine
+厳密な定義    げんみつなていぎ     precise definition
+白熱電灯    はくねつでんとう     incandescent lamp
+蒸気機関車    じょうききかんしゃ     steam locomotive
+蛍光灯    けいこうとう     fluorescent light
+太陽電池    たいようでんち     solar cell
+原子炉    げんしろ     nuclear reactor
+燃料電池    ねんりょうでんち     fuel cell
+電動機    でんどうき     electric motor
+乾電池    かんでんち     dry cell
+発電機    はつでんき     dynamo, generator
+火力発電    かりょくはつでん     thermal power generation
+転換    てんかん     conversion
+エントロピー    えんとろぴー     entropy
+比例    ひれい     proportion
+準静的断熱変化    じゅんせいてきだんねつへんか     quasi-static adiabatic change
+同量    どうりょう     same quantity
+放出    ほうしゅつ     emission, radiation, release
+一意的    いちいてき     unique
+横軸    よこじく     horizontal axis
+縦軸    たてじく     vertical axis
+吸収    きゅうしゅう     absorption
+等温線    とうおんせん     isotherm
+証明    しょうめい     proof
+省略    しょうりゃく     omission, abbreviation
+等方一様    とうほういちよう     isotropic uniformity
+平行    へいこう     parallel
+直線    ちょくせん     straight line
+不可逆変化    ふかぎゃくへんか     irreversible change
+取得する    しゅとくする     get, acquire
+可逆的    かぎゃくてき     reversible
+熱伝導    ねつでんどう     thermal conduction
+一様性    いちようせい     uniformity
+破れる    やぶれる     break
+熱平衡状態    ねつへいこうじょうたい     thermal equilibrium state
+適用する    てきようする     apply
+不等式    ふとうしき     inequality
+作業物質    さぎょうぶっしつ     working material
+外界    がいかい     external environment
+孤立する    こりつする     be isolated, stand alone
+特徴的    とくちょうてき     characteristic
+総決算    ふってわく     final settlement of accounts suddenly appearance
+放熱    ほうねつ     radiation of heat
